@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* base page chrome */
+:root { color-scheme: light; }
+html, body, #__next { height: 100%; }
+body { background: #fafafa; }

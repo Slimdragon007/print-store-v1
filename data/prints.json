@@ -1,0 +1,11 @@
+[
+  {
+    "id": "sedona-sunset-001",
+    "title": "Sedona Sunset",
+    "r2Key": "galleries/sedona-2025/sunset-001.jpg",
+    "variants": [
+      { "id": "8x10",  "label": "8 x 10 in",  "stripePriceId": "price_8x10_xxx",  "priceCents": 3000 },
+      { "id": "16x20", "label": "16 x 20 in", "stripePriceId": "price_16x20_xxx", "priceCents": 9000 }
+    ]
+  }
+]
