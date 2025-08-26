@@ -1,0 +1,302 @@
+name: Deploy to Vercel
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to deploy to'
+        required: true
+        default: 'preview'
+        type: choice
+        options:
+          - preview
+          - production
+
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+  NODE_VERSION: '20'
+
+jobs:
+  pre-flight-checks:
+    name: Pre-flight Checks
+    runs-on: ubuntu-latest
+    outputs:
+      should-deploy: ${{ steps.checks.outputs.should-deploy }}
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run TypeScript checks
+        run: npx tsc --noEmit
+
+      - name: Run pre-deployment checklist
+        id: checks
+        run: |
+          npx tsx scripts/pre-deploy-checklist.ts
+          echo "should-deploy=true" >> $GITHUB_OUTPUT
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+          NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: ${{ secrets.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY }}
+
+      - name: Test build process
+        run: npm run build
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+          NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: ${{ secrets.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+
+  security-scan:
+    name: Security Scan
+    runs-on: ubuntu-latest
+    needs: pre-flight-checks
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run security audit
+        run: npm audit --audit-level=high
+        continue-on-error: true
+
+      - name: Run CodeQL analysis
+        uses: github/codeql-action/init@v3
+        with:
+          languages: typescript, javascript
+
+      - name: Perform CodeQL analysis
+        uses: github/codeql-action/analyze@v3
+
+  deploy-preview:
+    name: Deploy Preview
+    runs-on: ubuntu-latest
+    needs: [pre-flight-checks, security-scan]
+    if: |
+      needs.pre-flight-checks.outputs.should-deploy == 'true' && 
+      (github.event_name == 'pull_request' || 
+       (github.event_name == 'workflow_dispatch' && github.event.inputs.environment == 'preview'))
+    environment: preview
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+
+      - name: Pull Vercel environment information
+        run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Build project artifacts
+        run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
+        env:
+          NODE_ENV: production
+
+      - name: Deploy to Vercel Preview
+        id: deploy-preview
+        run: |
+          DEPLOYMENT_URL=$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})
+          echo "deployment-url=$DEPLOYMENT_URL" >> $GITHUB_OUTPUT
+          echo "🚀 Preview deployment: $DEPLOYMENT_URL"
+
+      - name: Comment deployment URL on PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const deploymentUrl = '${{ steps.deploy-preview.outputs.deployment-url }}';
+            const comment = `## 🚀 Preview Deployment Ready!
+            
+            **Preview URL:** ${deploymentUrl}
+            
+            ### Deployment Details
+            - **Environment:** Preview
+            - **Branch:** \`${{ github.head_ref }}\`
+            - **Commit:** \`${{ github.sha }}\`
+            - **Workflow:** ${{ github.workflow }}
+            
+            ### Test Checklist
+            - [ ] Homepage loads correctly
+            - [ ] Print catalog displays properly
+            - [ ] Shopping cart functionality works
+            - [ ] Checkout process completes
+            - [ ] Images load and display correctly
+            - [ ] Mobile responsiveness verified
+            
+            *This deployment will be automatically updated when you push new commits to this PR.*`;
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            });
+
+  deploy-production:
+    name: Deploy Production
+    runs-on: ubuntu-latest
+    needs: [pre-flight-checks, security-scan]
+    if: |
+      needs.pre-flight-checks.outputs.should-deploy == 'true' && 
+      github.ref == 'refs/heads/main' && 
+      (github.event_name == 'push' || 
+       (github.event_name == 'workflow_dispatch' && github.event.inputs.environment == 'production'))
+    environment: production
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+
+      - name: Pull Vercel environment information
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Build project artifacts
+        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+        env:
+          NODE_ENV: production
+
+      - name: Deploy to Vercel Production
+        id: deploy-production
+        run: |
+          DEPLOYMENT_URL=$(vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }})
+          echo "deployment-url=$DEPLOYMENT_URL" >> $GITHUB_OUTPUT
+          echo "🚀 Production deployment: $DEPLOYMENT_URL"
+
+      - name: Test production deployment
+        run: |
+          # Wait for deployment to be ready
+          sleep 30
+          
+          # Test critical endpoints
+          DEPLOYMENT_URL="${{ steps.deploy-production.outputs.deployment-url }}"
+          
+          echo "Testing homepage..."
+          curl -f -s "$DEPLOYMENT_URL" > /dev/null
+          
+          echo "Testing prints page..."
+          curl -f -s "$DEPLOYMENT_URL/prints" > /dev/null
+          
+          echo "Testing API health..."
+          curl -f -s "$DEPLOYMENT_URL/api/health" > /dev/null || echo "Health check endpoint not found (optional)"
+          
+          echo "✅ Production deployment tests passed!"
+
+      - name: Post-deployment verification
+        run: |
+          npx tsx scripts/verify-stripe-webhooks.ts --production
+        env:
+          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+          STRIPE_WEBHOOK_SECRET: ${{ secrets.STRIPE_WEBHOOK_SECRET }}
+          DEPLOYMENT_URL: ${{ steps.deploy-production.outputs.deployment-url }}
+        continue-on-error: true
+
+      - name: Notify deployment success
+        if: success()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const deploymentUrl = '${{ steps.deploy-production.outputs.deployment-url }}';
+            
+            // Create a deployment status
+            await github.rest.repos.createDeploymentStatus({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              deployment_id: context.payload.deployment?.id || 0,
+              state: 'success',
+              environment_url: deploymentUrl,
+              description: 'Production deployment successful'
+            });
+
+  cleanup:
+    name: Cleanup
+    runs-on: ubuntu-latest
+    needs: [deploy-preview, deploy-production]
+    if: always()
+    
+    steps:
+      - name: Clean up old preview deployments
+        if: github.event_name == 'pull_request' && github.event.action == 'closed'
+        run: |
+          echo "PR closed, cleanup would happen here"
+          # Vercel automatically handles cleanup of preview deployments
+
+  notification:
+    name: Send Notifications
+    runs-on: ubuntu-latest
+    needs: [deploy-preview, deploy-production]
+    if: always() && (needs.deploy-preview.result == 'success' || needs.deploy-production.result == 'success')
+    
+    steps:
+      - name: Send Slack notification
+        if: vars.SLACK_WEBHOOK_URL
+        uses: 8398a7/action-slack@v3
+        with:
+          status: ${{ job.status }}
+          webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          fields: repo,message,commit,author,action,eventName,ref,workflow
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+      - name: Send email notification
+        if: vars.NOTIFICATION_EMAIL
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: 'Print Store Deployment ${{ job.status }}'
+          to: ${{ vars.NOTIFICATION_EMAIL }}
+          from: 'GitHub Actions <noreply@github.com>'
+          body: |
+            Print Store has been deployed successfully!
+            
+            Repository: ${{ github.repository }}
+            Branch: ${{ github.ref_name }}
+            Commit: ${{ github.sha }}
+            Workflow: ${{ github.workflow }}
+            
+            Status: ${{ job.status }}

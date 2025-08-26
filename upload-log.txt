@@ -1,0 +1,198 @@
+Etsy Photo Bulk Uploader
+══════════════════════════════
+Usage: node bulk-upload-etsy-photos.js [options]
+Options:
+  --dry-run, -d     Preview upload without actually uploading
+  --limit=N         Limit upload to first N products
+
+🚀 Starting Etsy Photo Bulk Upload
+
+📦 Loading product inventory...
+🔍 Starting Etsy Photo Inventory...
+
+📊 INVENTORY REPORT
+══════════════════════════════════════════════════
+
+📈 SUMMARY STATISTICS
+──────────────────────────────
+Total Folders Scanned:     79
+Product Folders:           67
+Utility Folders (ignored): 12
+Valid Products:            67
+Products with Issues:      0
+
+✅ SAMPLE VALID PRODUCTS
+──────────────────────────────
+
+✓ bsccop1-big-sur-california-cliff-ocean-print-1
+  Title: Big Sur California Cliff Ocean Print 1
+  Location: Big Sur, California
+  Main Image: main.jpg
+  Staged Images: 4
+
+✓ bsccop2-big-sur-california-cliff-ocean-print-2
+  Title: Big Sur California Cliff Ocean Print 2
+  Location: Big Sur, California
+  Main Image: main.jpg
+  Staged Images: 4
+
+✓ bsocfa1-big-sur-ocean-cliff-from-above-1
+  Title: Big Sur Ocean Cliff From Above 1
+  Location: Big Sur, California
+  Main Image: main.jpg
+  Staged Images: 5
+
+✓ hmb2bc1-hawaii-maui-black-sand-beach-cave-1
+  Title: Hmb2bc1 Hawaii Maui Black Sand Beach Cave 1
+  Location: Hawaii, Maui
+  Main Image: main.jpg
+  Staged Images: 10
+
+✓ hmbsbr1-hawaii-maui-black-sand-beach-rock-1
+  Title: Hawaii Maui Black Sand Beach Rock 1
+  Location: Hawaii, Maui
+  Main Image: main.jpg
+  Staged Images: 7
+
+... and 62 more valid products
+
+🗺️  PRODUCTS BY LOCATION
+──────────────────────────────
+Sedona, Arizona: 14 products
+Big Sur, California: 13 products
+Hawaii, Maui: 12 products
+Unknown: 9 products
+Flagstaff, Arizona: 8 products
+Joshua Tree, California: 5 products
+San Francisco, California: 3 products
+Los Angeles, California: 2 products
+Hawaii, Oahu: 1 products
+
+💾 Inventory data saved to: /Users/michaelhaslim/Library/Mobile Documents/com~apple~CloudDocs/Coding Projects/print store v1/etsy-inventory-2025-08-26T05-44-14-979Z.json
+📊 CSV report saved to: /Users/michaelhaslim/Library/Mobile Documents/com~apple~CloudDocs/Coding Projects/print store v1/etsy-inventory-2025-08-26T05-44-14-980Z.csv
+
+📋 UPLOAD PREVIEW REPORT
+══════════════════════════════════════════════════
+
+📊 SUMMARY
+──────────────────────────────
+Products to upload: 67
+Total images: 648
+Print variants to create: 268
+
+💾 ESTIMATED STORAGE USAGE
+──────────────────────────────
+Estimated total size: 906.30 MB
+
+📝 SAMPLE PRODUCTS TO UPLOAD
+──────────────────────────────
+
+1. bsccop1-big-sur-california-cliff-ocean-print-1
+   Title: Big Sur California Cliff Ocean Print 1
+   Location: Big Sur, California
+   Images: 5 total
+
+2. bsccop2-big-sur-california-cliff-ocean-print-2
+   Title: Big Sur California Cliff Ocean Print 2
+   Location: Big Sur, California
+   Images: 5 total
+
+3. bsocfa1-big-sur-ocean-cliff-from-above-1
+   Title: Big Sur Ocean Cliff From Above 1
+   Location: Big Sur, California
+   Images: 6 total
+
+4. hmb2bc1-hawaii-maui-black-sand-beach-cave-1
+   Title: Hmb2bc1 Hawaii Maui Black Sand Beach Cave 1
+   Location: Hawaii, Maui
+   Images: 11 total
+
+5. hmbsbr1-hawaii-maui-black-sand-beach-rock-1
+   Title: Hawaii Maui Black Sand Beach Rock 1
+   Location: Hawaii, Maui
+   Images: 8 total
+
+... and 62 more products
+
+🗺️  UPLOAD BY LOCATION
+──────────────────────────────
+Sedona, Arizona: 14 products
+Big Sur, California: 13 products
+Hawaii, Maui: 12 products
+Unknown: 9 products
+Flagstaff, Arizona: 8 products
+Joshua Tree, California: 5 products
+San Francisco, California: 3 products
+Los Angeles, California: 2 products
+Hawaii, Oahu: 1 products
+
+💰 VARIANT PRICING
+──────────────────────────────
+8x10: $25.00
+11x14: $35.00
+16x20: $45.00
+24x36: $65.00
+
+❓ Proceed with upload? (y/N): 
+🚀 Starting upload process...
+
+
+📦 Processing batch 1 (5 products, 67 remaining)
+
+📸 Processing: bsccop1-big-sur-california-cliff-ocean-print-1
+   Title: Big Sur California Cliff Ocean Print 1
+   Location: Big Sur, California
+   Images: 1 main + 4 staged
+
+📸 Processing: bsccop2-big-sur-california-cliff-ocean-print-2
+   Title: Big Sur California Cliff Ocean Print 2
+   Location: Big Sur, California
+   Images: 1 main + 4 staged
+
+📸 Processing: bsocfa1-big-sur-ocean-cliff-from-above-1
+   Title: Big Sur Ocean Cliff From Above 1
+   Location: Big Sur, California
+   Images: 1 main + 5 staged
+
+📸 Processing: hmb2bc1-hawaii-maui-black-sand-beach-cave-1
+   Title: Hmb2bc1 Hawaii Maui Black Sand Beach Cave 1
+   Location: Hawaii, Maui
+   Images: 1 main + 10 staged
+
+📸 Processing: hmbsbr1-hawaii-maui-black-sand-beach-rock-1
+   Title: Hawaii Maui Black Sand Beach Rock 1
+   Location: Hawaii, Maui
+   Images: 1 main + 7 staged
+   ❌ Failed: Failed to create print record: Could not find the 'image_url' column of 'prints' in the schema cache
+   ❌ Failed: Failed to create print record: Could not find the 'image_url' column of 'prints' in the schema cache
+   ❌ Failed: Failed to create print record: Could not find the 'image_url' column of 'prints' in the schema cache
+   ❌ Failed: Failed to create print record: Could not find the 'image_url' column of 'prints' in the schema cache
+   ❌ Failed: Failed to create print record: Could not find the 'image_url' column of 'prints' in the schema cache
+
+📦 Processing batch 2 (5 products, 62 remaining)
+
+📸 Processing: hmiv1-hawaii-maui-iao-valley-1
+   Title: Hawaii Maui Iao Valley 1
+   Location: Hawaii, Maui
+   Images: 1 main + 9 staged
+
+📸 Processing: hmiv2-hawaii-maui-iao-valley-2
+   Title: Hawaii Maui Iao Valley 2
+   Location: Hawaii, Maui
+   Images: 1 main + 9 staged
+
+📸 Processing: hmmhbw1-hawaii-maui-mount-haleakala-black-white-1
+   Title: Hawaii Maui Mount Haleakala Black White 1
+   Location: Hawaii, Maui
+   Images: 1 main + 6 staged
+
+📸 Processing: hmmhs1-hawaii-maui-mount-haleakala-sunset-1
+   Title: Hawaii Maui Mount Haleakala Sunset 1
+   Location: Hawaii, Maui
+   Images: 1 main + 10 staged
+
+📸 Processing: hmmhsst1-hawaii-maui-mount-haleakala-sliding-sands-trail-1
+   Title: Hawaii Maui Mount Haleakala Sliding Sands Trail 1
+   Location: Hawaii, Maui
+   Images: 1 main + 10 staged
+   ❌ Failed: Failed to create print record: Could not find the 'image_url' column of 'prints' in the schema cache

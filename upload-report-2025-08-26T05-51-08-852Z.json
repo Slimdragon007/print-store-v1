@@ -1,0 +1,83 @@
+{
+  "timestamp": "2025-08-26T05:51:08.852Z",
+  "dryRun": false,
+  "stats": {
+    "totalProducts": 67,
+    "successfulUploads": 57,
+    "failedUploads": 10,
+    "totalImages": 648,
+    "uploadedImages": 648,
+    "errors": [
+      {
+        "product": "bsccop1-big-sur-california-cliff-ocean-print-1",
+        "error": "Failed to create print record: duplicate key value violates unique constraint \"prints_slug_key\""
+      },
+      {
+        "product": "bsocfa1-big-sur-ocean-cliff-from-above-1",
+        "error": "Failed to create print record: duplicate key value violates unique constraint \"prints_slug_key\""
+      },
+      {
+        "product": "bsccop2-big-sur-california-cliff-ocean-print-2",
+        "error": "Failed to create print record: duplicate key value violates unique constraint \"prints_slug_key\""
+      },
+      {
+        "product": "hmbsbr1-hawaii-maui-black-sand-beach-rock-1",
+        "error": "Failed to create print record: duplicate key value violates unique constraint \"prints_slug_key\""
+      },
+      {
+        "product": "hmb2bc1-hawaii-maui-black-sand-beach-cave-1",
+        "error": "Failed to create print record: duplicate key value violates unique constraint \"prints_slug_key\""
+      },
+      {
+        "product": "hmmhbw1-hawaii-maui-mount-haleakala-black-white-1",
+        "error": "Failed to create print record: duplicate key value violates unique constraint \"prints_slug_key\""
+      },
+      {
+        "product": "hmmhsst1-hawaii-maui-mount-haleakala-sliding-sands-trail-1",
+        "error": "Failed to create print record: duplicate key value violates unique constraint \"prints_slug_key\""
+      },
+      {
+        "product": "hmiv1-hawaii-maui-iao-valley-1",
+        "error": "Failed to create print record: duplicate key value violates unique constraint \"prints_slug_key\""
+      },
+      {
+        "product": "hmiv2-hawaii-maui-iao-valley-2",
+        "error": "Failed to create print record: duplicate key value violates unique constraint \"prints_slug_key\""
+      },
+      {
+        "product": "hmmhs1-hawaii-maui-mount-haleakala-sunset-1",
+        "error": "Failed to create print record: duplicate key value violates unique constraint \"prints_slug_key\""
+      }
+    ]
+  },
+  "config": {
+    "batchSize": 5,
+    "variants": [
+      {
+        "code": "8x10",
+        "label": "8 x 10 in",
+        "price_cents": 2500,
+        "stripe_price_id": ""
+      },
+      {
+        "code": "11x14",
+        "label": "11 x 14 in",
+        "price_cents": 3500,
+        "stripe_price_id": ""
+      },
+      {
+        "code": "16x20",
+        "label": "16 x 20 in",
+        "price_cents": 4500,
+        "stripe_price_id": ""
+      },
+      {
+        "code": "24x36",
+        "label": "24 x 36 in",
+        "price_cents": 6500,
+        "stripe_price_id": ""
+      }
+    ],
+    "storageBucket": "prints"
+  }
+}

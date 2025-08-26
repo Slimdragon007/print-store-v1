@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Homepage -->
+  <url>
+    <loc>https://yourstore.com/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <lastmod>2025-08-26T05:56:16.962Z</lastmod>
+  </url>
+  
+  <!-- Products Index Page -->
+  <url>
+    <loc>https://yourstore.com/prints</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-08-26T05:56:16.962Z</lastmod>
+  </url>
+  
+  <!-- Individual Product Pages -->
+  <url>
+    <loc>https://yourstore.com/prints/sedona-golf-resort-rainbow-25-print-file</loc>
+    <lastmod>2025-08-26T05:55:27.827Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/sedona-golf-resort-rainbow-25-print-file/main.jpg</image:loc>
+      <image:title>Fine Art Print - sedona golf resort rainbow 25 print file</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/bsccop2-big-sur-california-cliff-ocean-print-2</loc>
+    <lastmod>2025-08-26T05:55:28.049Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/bsccop2-big-sur-california-cliff-ocean-print-2/main.jpg</image:loc>
+      <image:title>Fine Art Print - bsccop2 big sur california cliff ocean print 2</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/bsccop1-big-sur-california-cliff-ocean-print-1</loc>
+    <lastmod>2025-08-26T05:55:28.165Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/bsccop1-big-sur-california-cliff-ocean-print-1/main.jpg</image:loc>
+      <image:title>Fine Art Print - bsccop1 big sur california cliff ocean print 1</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/bsocfa1-big-sur-ocean-cliff-from-above-1</loc>
+    <lastmod>2025-08-26T05:55:28.281Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/bsocfa1-big-sur-ocean-cliff-from-above-1/main.jpg</image:loc>
+      <image:title>Fine Art Print - bsocfa1 big sur ocean cliff from above 1</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/hmbsbr1-hawaii-maui-black-sand-beach-rock-1</loc>
+    <lastmod>2025-08-26T05:55:28.466Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/hmbsbr1-hawaii-maui-black-sand-beach-rock-1/main.jpg</image:loc>
+      <image:title>Fine Art Print - hmbsbr1 hawaii maui black sand beach rock 1</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/hmb2bc1-hawaii-maui-black-sand-beach-cave-1</loc>
+    <lastmod>2025-08-26T05:55:28.575Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/hmb2bc1-hawaii-maui-black-sand-beach-cave-1/main.jpg</image:loc>
+      <image:title>Fine Art Print - hmb2bc1 hawaii maui black sand beach cave 1</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/hmiv2-hawaii-maui-iao-valley-2</loc>
+    <lastmod>2025-08-26T05:55:28.797Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/hmiv2-hawaii-maui-iao-valley-2/main.jpg</image:loc>
+      <image:title>Fine Art Print - hmiv2 hawaii maui iao valley 2</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/hmmhsst1-hawaii-maui-mount-haleakala-sliding-sands-trail-1</loc>
+    <lastmod>2025-08-26T05:55:29.006Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/hmmhsst1-hawaii-maui-mount-haleakala-sliding-sands-trail-1/main.jpg</image:loc>
+      <image:title>Fine Art Print - hmmhsst1 hawaii maui mount haleakala sliding sands trail 1</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/hmmhs1-hawaii-maui-mount-haleakala-sunset-1</loc>
+    <lastmod>2025-08-26T05:55:29.123Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/hmmhs1-hawaii-maui-mount-haleakala-sunset-1/main.jpg</image:loc>
+      <image:title>Fine Art Print - hmmhs1 hawaii maui mount haleakala sunset 1</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/hmiv1-hawaii-maui-iao-valley-1</loc>
+    <lastmod>2025-08-26T05:55:29.222Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/hmiv1-hawaii-maui-iao-valley-1/main.jpg</image:loc>
+      <image:title>Fine Art Print - hmiv1 hawaii maui iao valley 1</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/hmrthov1-hawaii-maui-road-to-hana-ocean-view-1</loc>
+    <lastmod>2025-08-26T05:55:29.333Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/hmrthov1-hawaii-maui-road-to-hana-ocean-view-1/main.jpg</image:loc>
+      <image:title>Fine Art Print - hmrthov1 hawaii maui road to hana ocean view 1</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/hmmhsst2-hawaii-maui-mount-haleakala-sliding-sands-trail-2</loc>
+    <lastmod>2025-08-26T05:55:29.625Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/hmmhsst2-hawaii-maui-mount-haleakala-sliding-sands-trail-2/main.jpg</image:loc>
+      <image:title>Fine Art Print - hmmhsst2 hawaii maui mount haleakala sliding sands trail 2</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/hmrthov2-hawaii-maui-road-to-hana-ocean-view-2</loc>
+    <lastmod>2025-08-26T05:55:29.742Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/hmrthov2-hawaii-maui-road-to-hana-ocean-view-2/main.jpg</image:loc>
+      <image:title>Fine Art Print - hmrthov2 hawaii maui road to hana ocean view 2</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/hmoth1-hawaii-maui-ohai-trail-hike-1</loc>
+    <lastmod>2025-08-26T05:55:29.863Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/hmoth1-hawaii-maui-ohai-trail-hike-1/main.jpg</image:loc>
+      <image:title>Fine Art Print - hmoth1 hawaii maui ohai trail hike 1</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/labmwpt1-los-angeles-bates-motel-white-palm-trees-1</loc>
+    <lastmod>2025-08-26T05:55:30.041Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/labmwpt1-los-angeles-bates-motel-white-palm-trees-1/main.jpg</image:loc>
+      <image:title>Fine Art Print - labmwpt1 los angeles bates motel white palm trees 1</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mapgyg2-airplane-graveyard-graffiti-2</loc>
+    <lastmod>2025-08-26T05:55:30.144Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mapgyg2-airplane-graveyard-graffiti-2/main.jpg</image:loc>
+      <image:title>Fine Art Print - mapgyg2 airplane graveyard graffiti 2</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/labmwpt2-los-angeles-bates-motel-white-palm-trees-2</loc>
+    <lastmod>2025-08-26T05:55:30.244Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/labmwpt2-los-angeles-bates-motel-white-palm-trees-2/main.jpg</image:loc>
+      <image:title>Fine Art Print - labmwpt2 los angeles bates motel white palm trees 2</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mapgy1-airplane-grayard-1</loc>
+    <lastmod>2025-08-26T05:55:30.341Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mapgy1-airplane-grayard-1/main.jpg</image:loc>
+      <image:title>Fine Art Print - mapgy1 airplane grayard 1</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/hodr1-hawaii-oahu-diamondhead-rainbow-1</loc>
+    <lastmod>2025-08-26T05:55:30.462Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/hodr1-hawaii-oahu-diamondhead-rainbow-1/main.jpg</image:loc>
+      <image:title>Fine Art Print - hodr1 hawaii oahu diamondhead rainbow 1</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mbbbsca2-bixby-bridge-big-sur-ca-2</loc>
+    <lastmod>2025-08-26T05:55:30.632Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mbbbsca2-bixby-bridge-big-sur-ca-2/main.jpg</image:loc>
+      <image:title>Fine Art Print - mbbbsca2 bixby bridge big sur ca 2</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mfbesf1-flagstaff-black-eye-susan-field-1</loc>
+    <lastmod>2025-08-26T05:55:30.844Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mfbesf1-flagstaff-black-eye-susan-field-1/main.jpg</image:loc>
+      <image:title>Fine Art Print - mfbesf1 flagstaff black eye susan field 1</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mbbsoasca-big-sur-ocean-and-shore-ca-live</loc>
+    <lastmod>2025-08-26T05:55:30.958Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mbbsoasca-big-sur-ocean-and-shore-ca-live/main.jpg</image:loc>
+      <image:title>Fine Art Print - mbbsoasca big sur ocean and shore ca live</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mbbbsca1-bixby-bridge-big-sur-ca-1</loc>
+    <lastmod>2025-08-26T05:55:31.144Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mbbbsca1-bixby-bridge-big-sur-ca-1/main.jpg</image:loc>
+      <image:title>Fine Art Print - mbbbsca1 bixby bridge big sur ca 1</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mfbesf4-flagstaff-black-eye-susan-field-4</loc>
+    <lastmod>2025-08-26T05:55:31.244Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mfbesf4-flagstaff-black-eye-susan-field-4/main.jpg</image:loc>
+      <image:title>Fine Art Print - mfbesf4 flagstaff black eye susan field 4</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mfrmbpfst2-flagstaff-rocky-mountain-bee-plant-field-summertime-2</loc>
+    <lastmod>2025-08-26T05:55:31.476Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mfrmbpfst2-flagstaff-rocky-mountain-bee-plant-field-summertime-2/main.jpg</image:loc>
+      <image:title>Fine Art Print - mfrmbpfst2 flagstaff rocky mountain bee plant field summertime 2</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mfbesf2-flagstaff-black-eye-susan-field-2</loc>
+    <lastmod>2025-08-26T05:55:31.666Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mfbesf2-flagstaff-black-eye-susan-field-2/main.jpg</image:loc>
+      <image:title>Fine Art Print - mfbesf2 flagstaff black eye susan field 2</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mfggrst1-flagstaff-gray-gravel-road-summertime-1</loc>
+    <lastmod>2025-08-26T05:55:31.778Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mfggrst1-flagstaff-gray-gravel-road-summertime-1/main.jpg</image:loc>
+      <image:title>Fine Art Print - mfggrst1 flagstaff gray gravel road summertime 1</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mggd1-golden-gate-daytime</loc>
+    <lastmod>2025-08-26T05:55:31.895Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mggd1-golden-gate-daytime/main.jpg</image:loc>
+      <image:title>Fine Art Print - mggd1 golden gate daytime</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mggdn2-golden-gate-night</loc>
+    <lastmod>2025-08-26T05:55:32.020Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mggdn2-golden-gate-night/main.jpg</image:loc>
+      <image:title>Fine Art Print - mggdn2 golden gate night</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mgcis1-golf-cart-in-sedona</loc>
+    <lastmod>2025-08-26T05:55:32.123Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mgcis1-golf-cart-in-sedona/main.jpg</image:loc>
+      <image:title>Fine Art Print - mgcis1 golf cart in sedona</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mgrr1-merry-go-round-rock</loc>
+    <lastmod>2025-08-26T05:55:32.340Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mgrr1-merry-go-round-rock/main.jpg</image:loc>
+      <image:title>Fine Art Print - mgrr1 merry go round rock</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mjtbs1-joshua-tree-live</loc>
+    <lastmod>2025-08-26T05:55:32.457Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mjtbs1-joshua-tree-live/main.jpg</image:loc>
+      <image:title>Fine Art Print - mjtbs1 joshua tree live</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mhwsla1-hollywood-sign</loc>
+    <lastmod>2025-08-26T05:55:32.902Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mhwsla1-hollywood-sign/main.jpg</image:loc>
+      <image:title>Fine Art Print - mhwsla1 hollywood sign</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mjtttl3-joshua-tree-2-landscape</loc>
+    <lastmod>2025-08-26T05:55:33.401Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mjtttl3-joshua-tree-2-landscape/main.jpg</image:loc>
+      <image:title>Fine Art Print - mjtttl3 joshua tree 2 landscape</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mjtltl2-joshua-tree-lonely-tree-landscape</loc>
+    <lastmod>2025-08-26T05:55:33.508Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mjtltl2-joshua-tree-lonely-tree-landscape/main.jpg</image:loc>
+      <image:title>Fine Art Print - mjtltl2 joshua tree lonely tree landscape</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mjttp4-joshua-tree-lonely-tree-portrait-4</loc>
+    <lastmod>2025-08-26T05:55:33.964Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mjttp4-joshua-tree-lonely-tree-portrait-4/main.jpg</image:loc>
+      <image:title>Fine Art Print - mjttp4 joshua tree lonely tree portrait 4</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mbbbsca2-bixby-bridge-big-sur-ca-2-print-file</loc>
+    <lastmod>2025-08-26T05:55:27.590Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mbbbsca2-bixby-bridge-big-sur-ca-2-print-file/main.jpg</image:loc>
+      <image:title>Fine Art Print - mbbbsca2 bixby bridge big sur ca 2 print file</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mmfbscap5-mcway-falls-big-sur-ca-5-print-file</loc>
+    <lastmod>2025-08-26T05:55:27.706Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mmfbscap5-mcway-falls-big-sur-ca-5-print-file/main.jpg</image:loc>
+      <image:title>Fine Art Print - mmfbscap5 mcway falls big sur ca 5 print file</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/hmmhbw1-hawaii-maui-mount-haleakala-black-white-1</loc>
+    <lastmod>2025-08-26T05:55:28.684Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/hmmhbw1-hawaii-maui-mount-haleakala-black-white-1/main.jpg</image:loc>
+      <image:title>Fine Art Print - hmmhbw1 hawaii maui mount haleakala black white 1</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/hmrthph1-hawaii-maui-road-to-hana-plantation-house-1</loc>
+    <lastmod>2025-08-26T05:55:29.512Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/hmrthph1-hawaii-maui-road-to-hana-plantation-house-1/main.jpg</image:loc>
+      <image:title>Fine Art Print - hmrthph1 hawaii maui road to hana plantation house 1</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mbbbsca3-bixby-bridge-big-sur-ca-3</loc>
+    <lastmod>2025-08-26T05:55:30.734Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mbbbsca3-bixby-bridge-big-sur-ca-3/main.jpg</image:loc>
+      <image:title>Fine Art Print - mbbbsca3 bixby bridge big sur ca 3</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mfbesf3-flagstaff-black-eye-susan-field-3</loc>
+    <lastmod>2025-08-26T05:55:31.357Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mfbesf3-flagstaff-black-eye-susan-field-3/main.jpg</image:loc>
+      <image:title>Fine Art Print - mfbesf3 flagstaff black eye susan field 3</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mfsomst1-flagstaff-sunset-over-mountain-summertime1</loc>
+    <lastmod>2025-08-26T05:55:32.229Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mfsomst1-flagstaff-sunset-over-mountain-summertime1/main.jpg</image:loc>
+      <image:title>Fine Art Print - mfsomst1 flagstaff sunset over mountain summertime1</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mmfbsca3-mcway-falls-big-sur-ca-3</loc>
+    <lastmod>2025-08-26T05:55:34.314Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mmfbsca3-mcway-falls-big-sur-ca-3/main.jpg</image:loc>
+      <image:title>Fine Art Print - mmfbsca3 mcway falls big sur ca 3</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mlacma1-la-lights</loc>
+    <lastmod>2025-08-26T05:55:34.424Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mlacma1-la-lights/main.jpg</image:loc>
+      <image:title>Fine Art Print - mlacma1 la lights</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mjtttp4-joshua-tree-three-tree-portrait-4</loc>
+    <lastmod>2025-08-26T05:55:34.545Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mjtttp4-joshua-tree-three-tree-portrait-4/main.jpg</image:loc>
+      <image:title>Fine Art Print - mjtttp4 joshua tree three tree portrait 4</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mmfbsca2-mcway-falls-big-sur-ca-2</loc>
+    <lastmod>2025-08-26T05:55:34.764Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mmfbsca2-mcway-falls-big-sur-ca-2/main.jpg</image:loc>
+      <image:title>Fine Art Print - mmfbsca2 mcway falls big sur ca 2</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mmfbsca1-mcway-falls-big-sur-ca-1</loc>
+    <lastmod>2025-08-26T05:55:34.866Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mmfbsca1-mcway-falls-big-sur-ca-1/main.jpg</image:loc>
+      <image:title>Fine Art Print - mmfbsca1 mcway falls big sur ca 1</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mmwfgs1-milky-way-galaxy-flagstaff-sky</loc>
+    <lastmod>2025-08-26T05:55:34.967Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mmwfgs1-milky-way-galaxy-flagstaff-sky/main.jpg</image:loc>
+      <image:title>Fine Art Print - mmwfgs1 milky way galaxy flagstaff sky</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mmfbsca6-mcway-falls-big-sur-ca-6</loc>
+    <lastmod>2025-08-26T05:55:35.298Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mmfbsca6-mcway-falls-big-sur-ca-6/main.jpg</image:loc>
+      <image:title>Fine Art Print - mmfbsca6 mcway falls big sur ca 6</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mmfbsca4-mcway-falls-big-sur-ca-4</loc>
+    <lastmod>2025-08-26T05:55:35.409Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mmfbsca4-mcway-falls-big-sur-ca-4/main.jpg</image:loc>
+      <image:title>Fine Art Print - mmfbsca4 mcway falls big sur ca 4</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mmfbscap5-mcway-falls-big-sur-ca-5</loc>
+    <lastmod>2025-08-26T05:55:35.519Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mmfbscap5-mcway-falls-big-sur-ca-5/main.jpg</image:loc>
+      <image:title>Fine Art Print - mmfbscap5 mcway falls big sur ca 5</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/msdca1-sand-dunes-ca</loc>
+    <lastmod>2025-08-26T05:55:35.647Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/msdca1-sand-dunes-ca/main.jpg</image:loc>
+      <image:title>Fine Art Print - msdca1 sand dunes ca</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/msgrl1-sedona-golf-resort-lake24</loc>
+    <lastmod>2025-08-26T05:55:35.889Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/msgrl1-sedona-golf-resort-lake24/main.jpg</image:loc>
+      <image:title>Fine Art Print - msgrl1 sedona golf resort lake24</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/msgrg5-sedona-golf-resort-greens-5</loc>
+    <lastmod>2025-08-26T05:55:36.082Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/msgrg5-sedona-golf-resort-greens-5/main.jpg</image:loc>
+      <image:title>Fine Art Print - msgrg5 sedona golf resort greens 5</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/msgroah10-sedona-golf-resort-on-a-hill-10</loc>
+    <lastmod>2025-08-26T05:55:36.208Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/msgroah10-sedona-golf-resort-on-a-hill-10/main.jpg</image:loc>
+      <image:title>Fine Art Print - msgroah10 sedona golf resort on a hill 10</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/msgrp3-sedona-golf-resort-pond-3</loc>
+    <lastmod>2025-08-26T05:55:36.378Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/msgrp3-sedona-golf-resort-pond-3/main.jpg</image:loc>
+      <image:title>Fine Art Print - msgrp3 sedona golf resort pond 3</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/msgrrf1-sedona-golf-resort-red-flag-sprinklers</loc>
+    <lastmod>2025-08-26T05:55:36.488Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/msgrrf1-sedona-golf-resort-red-flag-sprinklers/main.jpg</image:loc>
+      <image:title>Fine Art Print - msgrrf1 sedona golf resort red flag sprinklers</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mssanc2-sedona-skyline-at-night-color-portrait</loc>
+    <lastmod>2025-08-26T05:55:36.597Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mssanc2-sedona-skyline-at-night-color-portrait/main.jpg</image:loc>
+      <image:title>Fine Art Print - mssanc2 sedona skyline at night color portrait</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mssanbw2-sedona-skyline-at-night-black-white</loc>
+    <lastmod>2025-08-26T05:55:36.692Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mssanbw2-sedona-skyline-at-night-black-white/main.jpg</image:loc>
+      <image:title>Fine Art Print - mssanbw2 sedona skyline at night black white</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/msgrwf1-sedona-golf-resort-white-flag</loc>
+    <lastmod>2025-08-26T05:55:36.857Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/msgrwf1-sedona-golf-resort-white-flag/main.jpg</image:loc>
+      <image:title>Fine Art Print - msgrwf1 sedona golf resort white flag</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mssanc1-sedona-skyline-at-night-color-landscape</loc>
+    <lastmod>2025-08-26T05:55:36.952Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mssanc1-sedona-skyline-at-night-color-landscape/main.jpg</image:loc>
+      <image:title>Fine Art Print - mssanc1 sedona skyline at night color landscape</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mssanbw1-sedona-skyline-at-night-black-white-portrait</loc>
+    <lastmod>2025-08-26T05:55:37.050Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mssanbw1-sedona-skyline-at-night-black-white-portrait/main.jpg</image:loc>
+      <image:title>Fine Art Print - mssanbw1 sedona skyline at night black white portrait</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/sedona-golf-resort-rainbow-25</loc>
+    <lastmod>2025-08-26T05:55:37.154Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/sedona-golf-resort-rainbow-25/main.jpg</image:loc>
+      <image:title>Fine Art Print - sedona golf resort rainbow 25</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/sedona-gold-resort-lake-4</loc>
+    <lastmod>2025-08-26T05:55:37.262Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/sedona-gold-resort-lake-4/main.jpg</image:loc>
+      <image:title>Fine Art Print - sedona gold resort lake 4</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/sfcsva1-san-francisco-cityscape-view-above-1</loc>
+    <lastmod>2025-08-26T05:55:37.451Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/sfcsva1-san-francisco-cityscape-view-above-1/main.jpg</image:loc>
+      <image:title>Fine Art Print - sfcsva1 san francisco cityscape view above 1</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/mwhwh1-white-horse</loc>
+    <lastmod>2025-08-26T05:55:37.559Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/mwhwh1-white-horse/main.jpg</image:loc>
+      <image:title>Fine Art Print - mwhwh1 white horse</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/sedona-golf-resort-long-links-shot-6</loc>
+    <lastmod>2025-08-26T05:55:37.667Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/sedona-golf-resort-long-links-shot-6/main.jpg</image:loc>
+      <image:title>Fine Art Print - sedona golf resort long links shot 6</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/sftbac1-san-francisco-three-buildings-abstract-color-1</loc>
+    <lastmod>2025-08-26T05:55:37.776Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/sftbac1-san-francisco-three-buildings-abstract-color-1/main.jpg</image:loc>
+      <image:title>Fine Art Print - sftbac1 san francisco three buildings abstract color 1</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://yourstore.com/prints/sfrhc1-san-francisco-row-house-color-1</loc>
+    <lastmod>2025-08-26T05:55:37.951Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yourstore.com/api/images/sfrhc1-san-francisco-row-house-color-1/main.jpg</image:loc>
+      <image:title>Fine Art Print - sfrhc1 san francisco row house color 1</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Static Pages -->
+  <url>
+    <loc>https://yourstore.com/cart</loc>
+    <changefreq>never</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <url>
+    <loc>https://yourstore.com/success</loc>
+    <changefreq>never</changefreq>
+    <priority>0.1</priority>
+  </url>
+</urlset>

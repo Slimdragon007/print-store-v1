@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://yourstore.com/sitemap.xml
+
+# Block admin and API routes
+Disallow: /api/
+Disallow: /dashboard/
+Disallow: /sign-in/
+Disallow: /sign-up/
+Disallow: /cart
+Disallow: /success
+
+# Allow all image and print routes
+Allow: /prints/
+Allow: /api/images/

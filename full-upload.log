@@ -1,0 +1,647 @@
+Etsy Photo Bulk Uploader
+══════════════════════════════
+Usage: node bulk-upload-etsy-photos.js [options]
+Options:
+  --dry-run, -d     Preview upload without actually uploading
+  --limit=N         Limit upload to first N products
+
+🚀 Starting Etsy Photo Bulk Upload
+
+📦 Loading product inventory...
+🔍 Starting Etsy Photo Inventory...
+
+📊 INVENTORY REPORT
+══════════════════════════════════════════════════
+
+📈 SUMMARY STATISTICS
+──────────────────────────────
+Total Folders Scanned:     79
+Product Folders:           67
+Utility Folders (ignored): 12
+Valid Products:            67
+Products with Issues:      0
+
+✅ SAMPLE VALID PRODUCTS
+──────────────────────────────
+
+✓ bsccop1-big-sur-california-cliff-ocean-print-1
+  Title: Big Sur California Cliff Ocean Print 1
+  Location: Big Sur, California
+  Main Image: main.jpg
+  Staged Images: 4
+
+✓ bsccop2-big-sur-california-cliff-ocean-print-2
+  Title: Big Sur California Cliff Ocean Print 2
+  Location: Big Sur, California
+  Main Image: main.jpg
+  Staged Images: 4
+
+✓ bsocfa1-big-sur-ocean-cliff-from-above-1
+  Title: Big Sur Ocean Cliff From Above 1
+  Location: Big Sur, California
+  Main Image: main.jpg
+  Staged Images: 5
+
+✓ hmb2bc1-hawaii-maui-black-sand-beach-cave-1
+  Title: Hmb2bc1 Hawaii Maui Black Sand Beach Cave 1
+  Location: Hawaii, Maui
+  Main Image: main.jpg
+  Staged Images: 10
+
+✓ hmbsbr1-hawaii-maui-black-sand-beach-rock-1
+  Title: Hawaii Maui Black Sand Beach Rock 1
+  Location: Hawaii, Maui
+  Main Image: main.jpg
+  Staged Images: 7
+
+... and 62 more valid products
+
+🗺️  PRODUCTS BY LOCATION
+──────────────────────────────
+Sedona, Arizona: 14 products
+Big Sur, California: 13 products
+Hawaii, Maui: 12 products
+Unknown: 9 products
+Flagstaff, Arizona: 8 products
+Joshua Tree, California: 5 products
+San Francisco, California: 3 products
+Los Angeles, California: 2 products
+Hawaii, Oahu: 1 products
+
+💾 Inventory data saved to: /Users/michaelhaslim/Library/Mobile Documents/com~apple~CloudDocs/Coding Projects/print store v1/etsy-inventory-2025-08-26T05-48-51-912Z.json
+📊 CSV report saved to: /Users/michaelhaslim/Library/Mobile Documents/com~apple~CloudDocs/Coding Projects/print store v1/etsy-inventory-2025-08-26T05-48-51-913Z.csv
+
+📋 UPLOAD PREVIEW REPORT
+══════════════════════════════════════════════════
+
+📊 SUMMARY
+──────────────────────────────
+Products to upload: 67
+Total images: 648
+Print variants to create: 268
+
+💾 ESTIMATED STORAGE USAGE
+──────────────────────────────
+Estimated total size: 906.30 MB
+
+📝 SAMPLE PRODUCTS TO UPLOAD
+──────────────────────────────
+
+1. bsccop1-big-sur-california-cliff-ocean-print-1
+   Title: Big Sur California Cliff Ocean Print 1
+   Location: Big Sur, California
+   Images: 5 total
+
+2. bsccop2-big-sur-california-cliff-ocean-print-2
+   Title: Big Sur California Cliff Ocean Print 2
+   Location: Big Sur, California
+   Images: 5 total
+
+3. bsocfa1-big-sur-ocean-cliff-from-above-1
+   Title: Big Sur Ocean Cliff From Above 1
+   Location: Big Sur, California
+   Images: 6 total
+
+4. hmb2bc1-hawaii-maui-black-sand-beach-cave-1
+   Title: Hmb2bc1 Hawaii Maui Black Sand Beach Cave 1
+   Location: Hawaii, Maui
+   Images: 11 total
+
+5. hmbsbr1-hawaii-maui-black-sand-beach-rock-1
+   Title: Hawaii Maui Black Sand Beach Rock 1
+   Location: Hawaii, Maui
+   Images: 8 total
+
+... and 62 more products
+
+🗺️  UPLOAD BY LOCATION
+──────────────────────────────
+Sedona, Arizona: 14 products
+Big Sur, California: 13 products
+Hawaii, Maui: 12 products
+Unknown: 9 products
+Flagstaff, Arizona: 8 products
+Joshua Tree, California: 5 products
+San Francisco, California: 3 products
+Los Angeles, California: 2 products
+Hawaii, Oahu: 1 products
+
+💰 VARIANT PRICING
+──────────────────────────────
+8 x 10 in: $25.00
+11 x 14 in: $35.00
+16 x 20 in: $45.00
+24 x 36 in: $65.00
+
+❓ Proceed with upload? (y/N): 
+🚀 Starting upload process...
+
+
+📦 Processing batch 1 (5 products, 67 remaining)
+
+📸 Processing: bsccop1-big-sur-california-cliff-ocean-print-1
+   Title: Big Sur California Cliff Ocean Print 1
+   Location: Big Sur, California
+   Images: 1 main + 4 staged
+
+📸 Processing: bsccop2-big-sur-california-cliff-ocean-print-2
+   Title: Big Sur California Cliff Ocean Print 2
+   Location: Big Sur, California
+   Images: 1 main + 4 staged
+
+📸 Processing: bsocfa1-big-sur-ocean-cliff-from-above-1
+   Title: Big Sur Ocean Cliff From Above 1
+   Location: Big Sur, California
+   Images: 1 main + 5 staged
+
+📸 Processing: hmb2bc1-hawaii-maui-black-sand-beach-cave-1
+   Title: Hmb2bc1 Hawaii Maui Black Sand Beach Cave 1
+   Location: Hawaii, Maui
+   Images: 1 main + 10 staged
+
+📸 Processing: hmbsbr1-hawaii-maui-black-sand-beach-rock-1
+   Title: Hawaii Maui Black Sand Beach Rock 1
+   Location: Hawaii, Maui
+   Images: 1 main + 7 staged
+   ❌ Failed: Failed to create print record: duplicate key value violates unique constraint "prints_slug_key"
+   ❌ Failed: Failed to create print record: duplicate key value violates unique constraint "prints_slug_key"
+   ❌ Failed: Failed to create print record: duplicate key value violates unique constraint "prints_slug_key"
+   ❌ Failed: Failed to create print record: duplicate key value violates unique constraint "prints_slug_key"
+   ❌ Failed: Failed to create print record: duplicate key value violates unique constraint "prints_slug_key"
+
+📦 Processing batch 2 (5 products, 62 remaining)
+
+📸 Processing: hmiv1-hawaii-maui-iao-valley-1
+   Title: Hawaii Maui Iao Valley 1
+   Location: Hawaii, Maui
+   Images: 1 main + 9 staged
+
+📸 Processing: hmiv2-hawaii-maui-iao-valley-2
+   Title: Hawaii Maui Iao Valley 2
+   Location: Hawaii, Maui
+   Images: 1 main + 9 staged
+
+📸 Processing: hmmhbw1-hawaii-maui-mount-haleakala-black-white-1
+   Title: Hawaii Maui Mount Haleakala Black White 1
+   Location: Hawaii, Maui
+   Images: 1 main + 6 staged
+
+📸 Processing: hmmhs1-hawaii-maui-mount-haleakala-sunset-1
+   Title: Hawaii Maui Mount Haleakala Sunset 1
+   Location: Hawaii, Maui
+   Images: 1 main + 10 staged
+
+📸 Processing: hmmhsst1-hawaii-maui-mount-haleakala-sliding-sands-trail-1
+   Title: Hawaii Maui Mount Haleakala Sliding Sands Trail 1
+   Location: Hawaii, Maui
+   Images: 1 main + 10 staged
+   ❌ Failed: Failed to create print record: duplicate key value violates unique constraint "prints_slug_key"
+   ❌ Failed: Failed to create print record: duplicate key value violates unique constraint "prints_slug_key"
+   ❌ Failed: Failed to create print record: duplicate key value violates unique constraint "prints_slug_key"
+   ❌ Failed: Failed to create print record: duplicate key value violates unique constraint "prints_slug_key"
+   ❌ Failed: Failed to create print record: duplicate key value violates unique constraint "prints_slug_key"
+
+📦 Processing batch 3 (5 products, 57 remaining)
+
+📸 Processing: hmmhsst2-hawaii-maui-mount-haleakala-sliding-sands-trail-2
+   Title: Hawaii Maui Mount Haleakala Sliding Sands Trail 2
+   Location: Hawaii, Maui
+   Images: 1 main + 10 staged
+
+📸 Processing: hmoth1-hawaii-maui-ohai-trail-hike-1
+   Title: Hawaii Maui Ohai Trail Hike 1
+   Location: Hawaii, Maui
+   Images: 1 main + 10 staged
+
+📸 Processing: hmrthov1-hawaii-maui-road-to-hana-ocean-view-1
+   Title: Hawaii Maui Road To Hana Ocean View 1
+   Location: Hawaii, Maui
+   Images: 1 main + 7 staged
+
+📸 Processing: hmrthov2-hawaii-maui-road-to-hana-ocean-view-2
+   Title: Hawaii Maui Road To Hana Ocean View 2
+   Location: Hawaii, Maui
+   Images: 1 main + 12 staged
+
+📸 Processing: hmrthph1-hawaii-maui-road-to-hana-plantation-house-1
+   Title: Hawaii Maui Road To Hana Plantation House 1
+   Location: Hawaii, Maui
+   Images: 1 main + 8 staged
+   ✅ Success - Print ID: 5dg8000kgkmes4m1pc
+   📦 Created 4 size variants
+   ✅ Success - Print ID: doo260hxmcgmes4m2fq
+   📦 Created 4 size variants
+   ✅ Success - Print ID: 663rxwsdl28mes4m6my
+   📦 Created 4 size variants
+   ✅ Success - Print ID: 9ti955pkdimes4m6sg
+   📦 Created 4 size variants
+   ✅ Success - Print ID: hbgcc4mq9cmes4m6ym
+   📦 Created 4 size variants
+
+📦 Processing batch 4 (5 products, 52 remaining)
+
+📸 Processing: hodr1-hawaii-oahu-diamondhead-rainbow-1
+   Title: Hawaii Oahu Diamondhead Rainbow 1
+   Location: Hawaii, Oahu
+   Images: 1 main + 10 staged
+
+📸 Processing: labmwpt1-los-angeles-bates-motel-white-palm-trees-1
+   Title: Los Angeles Bates Motel White Palm Trees 1
+   Location: Los Angeles, California
+   Images: 1 main + 8 staged
+
+📸 Processing: labmwpt2-los-angeles-bates-motel-white-palm-trees-2
+   Title: Los Angeles Bates Motel White Palm Trees 2
+   Location: Los Angeles, California
+   Images: 1 main + 10 staged
+
+📸 Processing: mapgy1-airplane-grayard-1
+   Title: Airplane Grayard 1
+   Location: Unknown
+   Images: 1 main + 8 staged
+
+📸 Processing: mapgyg2-airplane-graveyard-graffiti-2
+   Title: Airplane Graveyard Graffiti 2
+   Location: Unknown
+   Images: 1 main + 6 staged
+   ✅ Success - Print ID: zou8n0yk6kemes4mait
+   📦 Created 4 size variants
+   ✅ Success - Print ID: 9iw2kfgv29dmes4maln
+   📦 Created 4 size variants
+   ✅ Success - Print ID: 56x2qtw2dk9mes4mb6f
+   📦 Created 4 size variants
+   ✅ Success - Print ID: ivzaiszuvljmes4md3r
+   📦 Created 4 size variants
+   ✅ Success - Print ID: ve56v10fasmes4mdko
+   📦 Created 4 size variants
+
+📦 Processing batch 5 (5 products, 47 remaining)
+
+📸 Processing: mbbbsca1-bixby-bridge-big-sur-ca-1
+   Title: Bixby Bridge Big Sur Ca 1
+   Location: Big Sur, California
+   Images: 1 main + 10 staged
+
+📸 Processing: mbbbsca2-bixby-bridge-big-sur-ca-2
+   Title: Bixby Bridge Big Sur Ca 2
+   Location: Big Sur, California
+   Images: 1 main + 8 staged
+
+📸 Processing: mbbbsca3-bixby-bridge-big-sur-ca-3
+   Title: Bixby Bridge Big Sur Ca 3
+   Location: Big Sur, California
+   Images: 1 main + 8 staged
+
+📸 Processing: mbbsoasca-big-sur-ocean-and-shore-ca-live
+   Title: Big Sur Ocean And Shore Ca Live
+   Location: Big Sur, California
+   Images: 1 main + 16 staged
+
+📸 Processing: mfbesf1-flagstaff-black-eye-susan-field-1
+   Title: Flagstaff Black Eye Susan Field 1
+   Location: Flagstaff, Arizona
+   Images: 1 main + 12 staged
+   ✅ Success - Print ID: 0mvfwotp1kdhmes4mh7w
+   📦 Created 4 size variants
+   ✅ Success - Print ID: 0mu7yjitodxdmes4mhjy
+   📦 Created 4 size variants
+   ✅ Success - Print ID: zn0j0lz46sjmes4mim3
+   📦 Created 4 size variants
+   ✅ Success - Print ID: svmihohmizimes4ml71
+   📦 Created 4 size variants
+   ✅ Success - Print ID: ge7gryd72komes4mm04
+   📦 Created 4 size variants
+
+📦 Processing batch 6 (5 products, 42 remaining)
+
+📸 Processing: mfbesf2-flagstaff-black-eye-susan-field-2
+   Title: Flagstaff Black Eye Susan Field 2
+   Location: Flagstaff, Arizona
+   Images: 1 main + 12 staged
+
+📸 Processing: mfbesf3-flagstaff-black-eye-susan-field-3
+   Title: Flagstaff Black Eye Susan Field 3
+   Location: Flagstaff, Arizona
+   Images: 1 main + 10 staged
+
+📸 Processing: mfbesf4-flagstaff-black-eye-susan-field-4
+   Title: Flagstaff Black Eye Susan Field 4
+   Location: Flagstaff, Arizona
+   Images: 1 main + 8 staged
+
+📸 Processing: mfggrst1-flagstaff-gray-gravel-road-summertime-1
+   Title: Flagstaff Gray Gravel Road Summertime 1
+   Location: Flagstaff, Arizona
+   Images: 1 main + 14 staged
+
+📸 Processing: mfrmbpfst2-flagstaff-rocky-mountain-bee-plant-field-summertime-2
+   Title: Flagstaff Rocky Mountain Bee Plant Field Summertime 2
+   Location: Flagstaff, Arizona
+   Images: 1 main + 8 staged
+   ✅ Success - Print ID: tf7eyboy7qsmes4mq3i
+   📦 Created 4 size variants
+   ✅ Success - Print ID: gin4yw8iinames4mqgc
+   📦 Created 4 size variants
+   ✅ Success - Print ID: u7v4uowf6w8mes4mqhp
+   📦 Created 4 size variants
+   ✅ Success - Print ID: a4os9ceobomes4mqmi
+   📦 Created 4 size variants
+   ✅ Success - Print ID: 18gvio1dq51hmes4ms48
+   📦 Created 4 size variants
+
+📦 Processing batch 7 (5 products, 37 remaining)
+
+📸 Processing: mfsomst1-flagstaff-sunset-over-mountain-summertime1
+   Title: Flagstaff Sunset Over Mountain Summertime1
+   Location: Flagstaff, Arizona
+   Images: 1 main + 16 staged
+
+📸 Processing: mgcis1-golf-cart-in-sedona
+   Title: Golf Cart In Sedona
+   Location: Sedona, Arizona
+   Images: 1 main + 12 staged
+
+📸 Processing: mggd1-golden-gate-daytime
+   Title: Golden Gate Daytime
+   Location: Unknown
+   Images: 1 main + 6 staged
+
+📸 Processing: mggdn2-golden-gate-night
+   Title: Golden Gate Night
+   Location: Unknown
+   Images: 1 main + 7 staged
+
+📸 Processing: mgrr1-merry-go-round-rock
+   Title: Merry Go Round Rock
+   Location: Unknown
+   Images: 1 main + 8 staged
+   ✅ Success - Print ID: 69znmd8vfeemes4mut3
+   📦 Created 4 size variants
+   ✅ Success - Print ID: tj4weprhmxlmes4mx0h
+   📦 Created 4 size variants
+   ✅ Success - Print ID: 8d83v3109z7mes4mxry
+   📦 Created 4 size variants
+   ✅ Success - Print ID: nu7rl1nwrmes4mzf2
+   📦 Created 4 size variants
+   ✅ Success - Print ID: q397b49fewtmes4n0yy
+   📦 Created 4 size variants
+
+📦 Processing batch 8 (5 products, 32 remaining)
+
+📸 Processing: mhwsla1-hollywood-sign
+   Title: Hollywood Sign
+   Location: Unknown
+   Images: 1 main + 6 staged
+
+📸 Processing: mjtbs1-joshua-tree-live
+   Title: Joshua Tree Live
+   Location: Joshua Tree, California
+   Images: 1 main + 6 staged
+
+📸 Processing: mjtltl2-joshua-tree-lonely-tree-landscape
+   Title: Joshua Tree Lonely Tree Landscape
+   Location: Joshua Tree, California
+   Images: 1 main + 8 staged
+
+📸 Processing: mjttp4-joshua-tree-lonely-tree-portrait-4
+   Title: Joshua Tree Lonely Tree Portrait 4
+   Location: Joshua Tree, California
+   Images: 1 main + 12 staged
+
+📸 Processing: mjtttl3-joshua-tree-2-landscape
+   Title: Joshua Tree 2 Landscape
+   Location: Joshua Tree, California
+   Images: 1 main + 8 staged
+   ✅ Success - Print ID: c5xi6vd4q8mes4n406
+   📦 Created 4 size variants
+   ✅ Success - Print ID: 6v0xuygahunmes4n41s
+   📦 Created 4 size variants
+   ✅ Success - Print ID: whhhdd9rah8mes4n4nd
+   📦 Created 4 size variants
+   ✅ Success - Print ID: l029erzyfmdmes4n50m
+   📦 Created 4 size variants
+   ✅ Success - Print ID: kjqxhhsrzcpmes4n582
+   📦 Created 4 size variants
+
+📦 Processing batch 9 (5 products, 27 remaining)
+
+📸 Processing: mjtttp4-joshua-tree-three-tree-portrait-4
+   Title: Joshua Tree Three Tree Portrait 4
+   Location: Joshua Tree, California
+   Images: 1 main + 8 staged
+
+📸 Processing: mlacma1-la-lights
+   Title: La Lights
+   Location: Unknown
+   Images: 1 main + 8 staged
+
+📸 Processing: mmfbsca1-mcway-falls-big-sur-ca-1
+   Title: Mcway Falls Big Sur Ca 1
+   Location: Big Sur, California
+   Images: 1 main + 24 staged
+
+📸 Processing: mmfbsca2-mcway-falls-big-sur-ca-2
+   Title: Mcway Falls Big Sur Ca 2
+   Location: Big Sur, California
+   Images: 1 main + 10 staged
+
+📸 Processing: mmfbsca3-mcway-falls-big-sur-ca-3
+   Title: Mcway Falls Big Sur Ca 3
+   Location: Big Sur, California
+   Images: 1 main + 8 staged
+   ✅ Success - Print ID: ha4tw0l3r6dmes4n8ky
+   📦 Created 4 size variants
+   ✅ Success - Print ID: mrgzavm78wmes4n8o9
+   📦 Created 4 size variants
+   ✅ Success - Print ID: 4xp1xqfc7gxmes4n92d
+   📦 Created 4 size variants
+   ✅ Success - Print ID: 0gywb0etp10tmes4na66
+   📦 Created 4 size variants
+   ✅ Success - Print ID: 577bfzguzm4mes4njfj
+   📦 Created 4 size variants
+
+📦 Processing batch 10 (5 products, 22 remaining)
+
+📸 Processing: mmfbsca4-mcway-falls-big-sur-ca-4
+   Title: Mcway Falls Big Sur Ca 4
+   Location: Big Sur, California
+   Images: 1 main + 8 staged
+
+📸 Processing: mmfbsca6-mcway-falls-big-sur-ca-6
+   Title: Mcway Falls Big Sur Ca 6
+   Location: Big Sur, California
+   Images: 1 main + 8 staged
+
+📸 Processing: mmfbscap5-mcway-falls-big-sur-ca-5
+   Title: Mcway Falls Big Sur Ca 5
+   Location: Big Sur, California
+   Images: 1 main + 10 staged
+
+📸 Processing: mmwfgs1-milky-way-galaxy-flagstaff-sky
+   Title: Milky Way Galaxy Flagstaff Sky
+   Location: Flagstaff, Arizona
+   Images: 1 main + 8 staged
+
+📸 Processing: msdca1-sand-dunes-ca
+   Title: Sand Dunes Ca
+   Location: Unknown
+   Images: 1 main + 14 staged
+   ✅ Success - Print ID: fqevlk27uxmes4nmmo
+   📦 Created 4 size variants
+   ✅ Success - Print ID: 15bt9guqpqskmes4nmqi
+   📦 Created 4 size variants
+   ✅ Success - Print ID: c98flpaahutmes4nnfl
+   📦 Created 4 size variants
+   ✅ Success - Print ID: 3ljwfcahrqxmes4no8h
+   📦 Created 4 size variants
+   ✅ Success - Print ID: fmd6niavyzmes4np8x
+   📦 Created 4 size variants
+
+📦 Processing batch 11 (5 products, 17 remaining)
+
+📸 Processing: msgrg5-sedona-golf-resort-greens-5
+   Title: Sedona Golf Resort Greens 5
+   Location: Sedona, Arizona
+   Images: 1 main + 8 staged
+
+📸 Processing: msgrl1-sedona-golf-resort-lake24
+   Title: Sedona Golf Resort Lake24
+   Location: Sedona, Arizona
+   Images: 1 main + 0 staged
+
+📸 Processing: msgroah10-sedona-golf-resort-on-a-hill-10
+   Title: Sedona Golf Resort On A Hill 10
+   Location: Sedona, Arizona
+   Images: 1 main + 8 staged
+
+📸 Processing: msgrp3-sedona-golf-resort-pond-3
+   Title: Sedona Golf Resort Pond 3
+   Location: Sedona, Arizona
+   Images: 1 main + 10 staged
+
+📸 Processing: msgrrf1-sedona-golf-resort-red-flag-sprinklers
+   Title: Sedona Golf Resort Red Flag Sprinklers
+   Location: Sedona, Arizona
+   Images: 1 main + 8 staged
+   ✅ Success - Print ID: r8udgxhk01mes4nqvv
+   📦 Created 4 size variants
+   ✅ Success - Print ID: dbw3gir5acsmes4nsyr
+   📦 Created 4 size variants
+   ✅ Success - Print ID: hsj3uwmrv4mes4ntta
+   📦 Created 4 size variants
+   ✅ Success - Print ID: fzkr780mfj7mes4nut1
+   📦 Created 4 size variants
+   ✅ Success - Print ID: jmqod7qd6yemes4nvi3
+   📦 Created 4 size variants
+
+📦 Processing batch 12 (5 products, 12 remaining)
+
+📸 Processing: msgrwf1-sedona-golf-resort-white-flag
+   Title: Sedona Golf Resort White Flag
+   Location: Sedona, Arizona
+   Images: 1 main + 8 staged
+
+📸 Processing: mssanbw1-sedona-skyline-at-night-black-white-portrait
+   Title: Sedona Skyline At Night Black White Portrait
+   Location: Sedona, Arizona
+   Images: 1 main + 8 staged
+
+📸 Processing: mssanbw2-sedona-skyline-at-night-black-white
+   Title: Sedona Skyline At Night Black White
+   Location: Sedona, Arizona
+   Images: 1 main + 8 staged
+
+📸 Processing: mssanc1-sedona-skyline-at-night-color-landscape
+   Title: Sedona Skyline At Night Color Landscape
+   Location: Sedona, Arizona
+   Images: 1 main + 8 staged
+
+📸 Processing: mssanc2-sedona-skyline-at-night-color-portrait
+   Title: Sedona Skyline At Night Color Portrait
+   Location: Sedona, Arizona
+   Images: 1 main + 0 staged
+   ✅ Success - Print ID: 8l72ilqvks6mes4nxnb
+   📦 Created 4 size variants
+   ✅ Success - Print ID: 6lge0idmomxmes4nz0h
+   📦 Created 4 size variants
+   ✅ Success - Print ID: hp4v05rmqames4nzd7
+   📦 Created 4 size variants
+   ✅ Success - Print ID: 76xzzc1btnwmes4o06r
+   📦 Created 4 size variants
+   ✅ Success - Print ID: tgqnfspr3wmes4o0cj
+   📦 Created 4 size variants
+
+📦 Processing batch 13 (5 products, 7 remaining)
+
+📸 Processing: mwhwh1-white-horse
+   Title: White Horse
+   Location: Unknown
+   Images: 1 main + 8 staged
+
+📸 Processing: sedona-gold-resort-lake-4
+   Title: Gold Resort Lake 4
+   Location: Sedona, Arizona
+   Images: 1 main + 0 staged
+
+📸 Processing: sedona-golf-resort-long-links-shot-6
+   Title: Golf Resort Long Links Shot 6
+   Location: Sedona, Arizona
+   Images: 1 main + 16 staged
+
+📸 Processing: sedona-golf-resort-rainbow-25
+   Title: Golf Resort Rainbow 25
+   Location: Sedona, Arizona
+   Images: 1 main + 0 staged
+
+📸 Processing: sfcsva1-san-francisco-cityscape-view-above-1
+   Title: San Francisco Cityscape View Above 1
+   Location: San Francisco, California
+   Images: 1 main + 9 staged
+   ✅ Success - Print ID: 0fpkjgj6wc2smes4o2b8
+   📦 Created 4 size variants
+   ✅ Success - Print ID: 1yromazgsbvmes4o3yx
+   📦 Created 4 size variants
+   ✅ Success - Print ID: sph2t736sikmes4o48c
+   📦 Created 4 size variants
+   ✅ Success - Print ID: 0yil0bgf9e8mes4o4qc
+   📦 Created 4 size variants
+   ✅ Success - Print ID: 0tfbko2iccnmes4o78t
+   📦 Created 4 size variants
+
+📦 Processing batch 14 (2 products, 2 remaining)
+
+📸 Processing: sfrhc1-san-francisco-row-house-color-1
+   Title: San Francisco Row House Color 1
+   Location: San Francisco, California
+   Images: 1 main + 10 staged
+
+📸 Processing: sftbac1-san-francisco-three-buildings-abstract-color-1
+   Title: San Francisco Three Buildings Abstract Color 1
+   Location: San Francisco, California
+   Images: 1 main + 8 staged
+   ✅ Success - Print ID: 3zc0jf5im9omes4oawt
+   📦 Created 4 size variants
+   ✅ Success - Print ID: epg0sjyymn9mes4obc4
+   📦 Created 4 size variants
+
+📊 UPLOAD COMPLETE
+══════════════════════════════════════════════════
+Duration: 136.9 seconds
+Successful uploads: 57
+Failed uploads: 10
+Images processed: 648/648
+
+❌ ERRORS
+────────────────────
+bsccop1-big-sur-california-cliff-ocean-print-1: Failed to create print record: duplicate key value violates unique constraint "prints_slug_key"
+bsocfa1-big-sur-ocean-cliff-from-above-1: Failed to create print record: duplicate key value violates unique constraint "prints_slug_key"
+bsccop2-big-sur-california-cliff-ocean-print-2: Failed to create print record: duplicate key value violates unique constraint "prints_slug_key"
+hmbsbr1-hawaii-maui-black-sand-beach-rock-1: Failed to create print record: duplicate key value violates unique constraint "prints_slug_key"
+hmb2bc1-hawaii-maui-black-sand-beach-cave-1: Failed to create print record: duplicate key value violates unique constraint "prints_slug_key"
+hmmhbw1-hawaii-maui-mount-haleakala-black-white-1: Failed to create print record: duplicate key value violates unique constraint "prints_slug_key"
+hmmhsst1-hawaii-maui-mount-haleakala-sliding-sands-trail-1: Failed to create print record: duplicate key value violates unique constraint "prints_slug_key"
+hmiv1-hawaii-maui-iao-valley-1: Failed to create print record: duplicate key value violates unique constraint "prints_slug_key"
+hmiv2-hawaii-maui-iao-valley-2: Failed to create print record: duplicate key value violates unique constraint "prints_slug_key"
+hmmhs1-hawaii-maui-mount-haleakala-sunset-1: Failed to create print record: duplicate key value violates unique constraint "prints_slug_key"
+
+💾 Upload report saved to: /Users/michaelhaslim/Library/Mobile Documents/com~apple~CloudDocs/Coding Projects/print store v1/upload-report-2025-08-26T05-51-08-852Z.json

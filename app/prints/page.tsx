@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useAnalytics } from "@/lib/analytics/use-analytics";
 
 type Variant = { id: string; label: string; priceCents: number; stripePriceId?: string };
 type Item = { id: string; title: string; imageUrl: string; variants: Variant[] };
@@ -9,11 +10,28 @@ export default function Home() {
   const [items, setItems] = useState<Item[]>([]);
   const [busy, setBusy] = useState<string | null>(null);
   const [cartCount, setCartCount] = useState(0);
+  
+  // Initialize analytics
+  const analytics = useAnalytics({ debugMode: true });
 
   useEffect(() => { 
-    fetch("/api/prints").then(r => r.json()).then(d => setItems(d.items || [])); 
+    fetch("/api/prints").then(r => r.json()).then(d => {
+      setItems(d.items || []);
+      
+      // Track page view with product catalog context
+      analytics.trackPageView(
+        'Print Store - Browse Prints',
+        window.location.href,
+        document.referrer,
+        {
+          content_group1: 'Product Catalog',
+          content_group2: 'Prints',
+          content_group3: 'Browse'
+        }
+      );
+    }); 
     updateCartCount();
-  }, []);
+  }, [analytics]);
 
   function updateCartCount() {
     const cart = JSON.parse(localStorage.getItem('cart') || '[]');
@@ -22,6 +40,25 @@ export default function Home() {
 
   async function buyNow(printId: string, variantId: string) {
     setBusy(`${printId}:${variantId}`);
+    
+    // Find the print and variant for analytics
+    const print = items.find(p => p.id === printId);
+    const variant = print?.variants.find(v => v.id === variantId);
+    
+    if (print && variant) {
+      // Track begin checkout event
+      const printData = {
+        id: printId,
+        title: print.title,
+        price: variant.priceCents / 100,
+        category: 'prints',
+        size: variant.label,
+        quantity: 1
+      };
+      
+      analytics.trackBeginCheckout([printData]);
+    }
+    
     const res = await fetch("/api/checkout", { 
       method: "POST", 
       headers: { "content-type": "application/json" },
@@ -29,8 +66,12 @@ export default function Home() {
     });
     const data = await res.json(); 
     setBusy(null);
-    if (data.url) window.location.href = data.url; 
-    else alert(data.error || "Checkout failed");
+    
+    if (data.url) {
+      window.location.href = data.url;
+    } else {
+      alert(data.error || "Checkout failed");
+    }
   }
 
   function addToCart(print: Item, variant: Variant) {
@@ -38,6 +79,18 @@ export default function Home() {
     const existing = cart.findIndex((item: any) => 
       item.printId === print.id && item.variantId === variant.id
     );
+
+    // Track add to cart event
+    const printData = {
+      id: print.id,
+      title: print.title,
+      price: variant.priceCents / 100,
+      category: 'prints',
+      size: variant.label,
+      quantity: 1
+    };
+    
+    analytics.trackAddToCart([printData]);
 
     if (existing >= 0) {
       cart[existing].quantity += 1;
@@ -111,7 +164,20 @@ export default function Home() {
               key={p.id} 
               className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="aspect-w-16 aspect-h-12 bg-gray-200">
+              <div 
+                className="aspect-w-16 aspect-h-12 bg-gray-200 cursor-pointer"
+                onClick={() => {
+                  // Track view item event when image is clicked
+                  const printData = {
+                    id: p.id,
+                    title: p.title,
+                    price: p.variants[0]?.priceCents / 100 || 0,
+                    category: 'prints',
+                    imageUrl: p.imageUrl
+                  };
+                  analytics.trackViewItem(printData);
+                }}
+              >
                 <img 
                   src={p.imageUrl} 
                   alt={p.title} 

@@ -1,0 +1,96 @@
+{
+  "description": "Edge Configuration Template for Print Store",
+  "version": "1.0.0",
+  "config": {
+    "feature_flags": {
+      "maintenance_mode": false,
+      "new_checkout_flow": true,
+      "image_optimization_v2": true,
+      "advanced_filtering": true,
+      "social_login": false
+    },
+    "cache_settings": {
+      "prints_cache_ttl": 3600,
+      "images_cache_ttl": 86400,
+      "api_cache_ttl": 300,
+      "static_cache_ttl": 31536000
+    },
+    "performance": {
+      "image_sizes": [320, 640, 768, 1024, 1280, 1920],
+      "image_formats": ["webp", "avif", "jpg"],
+      "lazy_loading_threshold": 2,
+      "prefetch_threshold": 0.5
+    },
+    "limits": {
+      "max_prints_per_page": 50,
+      "max_cart_items": 100,
+      "max_file_size_mb": 10,
+      "rate_limit_per_minute": 1000
+    },
+    "business_rules": {
+      "min_order_amount": 0,
+      "max_order_amount": 10000,
+      "free_shipping_threshold": 75,
+      "tax_rate": 0.08,
+      "processing_days": 3
+    },
+    "external_services": {
+      "stripe_webhook_tolerance": 300,
+      "supabase_timeout": 5000,
+      "image_service_timeout": 10000,
+      "analytics_sampling_rate": 0.1
+    },
+    "seo": {
+      "site_name": "Print Store",
+      "default_description": "Beautiful art prints for your home and office",
+      "og_image_width": 1200,
+      "og_image_height": 630,
+      "twitter_card_type": "summary_large_image"
+    },
+    "redirects": [
+      {
+        "source": "/old-shop",
+        "destination": "/prints",
+        "permanent": true
+      },
+      {
+        "source": "/catalog",
+        "destination": "/prints",
+        "permanent": true
+      }
+    ],
+    "blocked_regions": [],
+    "blocked_ips": [],
+    "allowlist_ips": [],
+    "cors_origins": [
+      "https://your-domain.com",
+      "https://www.your-domain.com"
+    ],
+    "webhook_endpoints": {
+      "stripe_webhook": "/api/stripe/webhook",
+      "health_check": "/api/health",
+      "monitoring": "/api/monitor"
+    },
+    "monitoring": {
+      "error_threshold": 10,
+      "response_time_threshold": 3000,
+      "availability_threshold": 99.9,
+      "alert_channels": ["email", "slack"]
+    }
+  },
+  "usage_notes": [
+    "This configuration can be used with Vercel Edge Config for dynamic feature toggles",
+    "Update feature flags without redeployment",
+    "Adjust cache settings based on usage patterns",
+    "Monitor performance metrics and adjust limits accordingly",
+    "Use blocked_regions for geo-restrictions if needed",
+    "Test thoroughly before enabling in production"
+  ],
+  "setup_instructions": [
+    "1. Create Edge Config in Vercel dashboard",
+    "2. Import this configuration",
+    "3. Add Edge Config environment variable to your project",
+    "4. Update your application to read from Edge Config",
+    "5. Deploy and test the configuration"
+  ]
+}
