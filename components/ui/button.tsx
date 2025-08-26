@@ -1,6 +1,7 @@
 'use client';
 import { ButtonHTMLAttributes } from "react";
-export default function Button(props: ButtonHTMLAttributes<HTMLButtonElement>){
+
+export function Button(props: ButtonHTMLAttributes<HTMLButtonElement>){
   const { className="", disabled, ...rest } = props;
   return (
     <button
@@ -14,3 +15,5 @@ export default function Button(props: ButtonHTMLAttributes<HTMLButtonElement>){
     />
   );
 }
+
+export default Button;

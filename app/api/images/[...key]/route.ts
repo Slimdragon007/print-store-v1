@@ -18,7 +18,10 @@ function guessType(k: string) {
   return "application/octet-stream";
 }
 
-export async function GET(_req: NextRequest, context: { params: Promise<{ key?: string[] }> }) {
+export async function GET(
+  req: NextRequest,
+  context: { params: Promise<{ key: string[] }> }
+) {
   try {
     const params = await context.params;
     const keyRaw = params.key?.join("/") || "";

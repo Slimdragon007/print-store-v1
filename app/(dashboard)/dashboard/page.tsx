@@ -61,7 +61,7 @@ function ManageSubscription() {
               </p>
             </div>
             <form action={customerPortalAction}>
-              <Button type="submit" variant="outline">
+              <Button type="submit" className="bg-white text-gray-800 border border-gray-300 hover:bg-gray-50">
                 Manage Subscription
               </Button>
             </form>
@@ -158,8 +158,7 @@ function TeamMembers() {
                   <input type="hidden" name="memberId" value={member.id} />
                   <Button
                     type="submit"
-                    variant="outline"
-                    size="sm"
+                    className="bg-white text-gray-800 border border-gray-300 hover:bg-gray-50 text-sm px-3 py-1"
                     disabled={isRemovePending}
                   >
                     {isRemovePending ? 'Removing...' : 'Remove'}

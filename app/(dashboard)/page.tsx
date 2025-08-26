@@ -24,9 +24,7 @@ export default function HomePage() {
                   target="_blank"
                 >
                   <Button
-                    size="lg"
-                    variant="outline"
-                    className="text-lg rounded-full"
+                    className="text-lg rounded-full px-8 py-3 bg-white text-gray-800 border border-gray-300 hover:bg-gray-50"
                   >
                     Deploy your own
                     <ArrowRight className="ml-2 h-5 w-5" />
@@ -113,9 +111,7 @@ export default function HomePage() {
             <div className="mt-8 lg:mt-0 flex justify-center lg:justify-end">
               <a href="https://github.com/nextjs/saas-starter" target="_blank">
                 <Button
-                  size="lg"
-                  variant="outline"
-                  className="text-lg rounded-full"
+                  className="text-lg rounded-full px-8 py-3 bg-white text-gray-800 border border-gray-300 hover:bg-gray-50"
                 >
                   View the code
                   <ArrowRight className="ml-3 h-6 w-6" />
