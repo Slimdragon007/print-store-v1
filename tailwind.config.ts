@@ -8,6 +8,6 @@ const config: Config = {
     "./components/**/*.{ts,tsx}"
   ],
   theme: { extend: {} },
-  plugins: [require("tailwindcss-animate")]
+  plugins: []
 };
 export default config;

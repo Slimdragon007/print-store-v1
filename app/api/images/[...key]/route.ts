@@ -18,10 +18,11 @@ function guessType(k: string) {
   return "application/octet-stream";
 }
 
-export async function GET(_req: NextRequest, { params }: { params: Promise<{ key?: string[] }> }) {
+export async function GET(_req: NextRequest, { params }: { params: { key?: string[] } }) {
   try {
-    const resolvedParams = await params;
-    const key = resolvedParams.key?.join("/") || "";
+    const keyRaw = params.key?.join("/") || "";
+    const key = keyRaw.replace(/^\/+/, "");
+    console.log("[R2 fetch]", { bucket: BUCKET, endpoint: process.env.R2_ENDPOINT, key });
     if (!key) return new NextResponse("Missing key", { status: 400 });
 
     let contentType: string | undefined;

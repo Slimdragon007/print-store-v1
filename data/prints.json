@@ -1,11 +1,59 @@
 [
   {
-    "id": "sedona-sunset-001",
-    "title": "Sedona Sunset",
-    "r2Key": "galleries/sedona-2025/sunset-001.jpg",
+    "id": "mbbbsca2-bixby-bridge-big-sur-ca-2-print-file",
+    "title": "MBBBSCA2 Bixby Bridge, Big Sur, CA 2 Print File",
+    "r2Key": "prints/MBBBSCA2_Bixby Bridge, Big Sur, CA 2 Print File.jpg",
     "variants": [
-      { "id": "8x10",  "label": "8 x 10 in",  "stripePriceId": "price_8x10_xxx",  "priceCents": 3000 },
-      { "id": "16x20", "label": "16 x 20 in", "stripePriceId": "price_16x20_xxx", "priceCents": 9000 }
+      {
+        "id": "8x10",
+        "label": "8 x 10 in",
+        "stripePriceId": "price_8x10_xxx",
+        "priceCents": 3000
+      },
+      {
+        "id": "16x20",
+        "label": "16 x 20 in",
+        "stripePriceId": "price_16x20_xxx",
+        "priceCents": 9000
+      }
+    ]
+  },
+  {
+    "id": "mmfbscap5-mcway-falls-big-sur-ca-5-print-file",
+    "title": "MMFBSCAP5 Mcway Falls Big Sur CA 5 Print File",
+    "r2Key": "prints/MMFBSCAP5_Mcway Falls Big Sur CA 5 Print File.jpg",
+    "variants": [
+      {
+        "id": "8x10",
+        "label": "8 x 10 in",
+        "stripePriceId": "price_8x10_xxx",
+        "priceCents": 3000
+      },
+      {
+        "id": "16x20",
+        "label": "16 x 20 in",
+        "stripePriceId": "price_16x20_xxx",
+        "priceCents": 9000
+      }
+    ]
+  },
+  {
+    "id": "sedona-golf-resort-rainbow-25-print-file",
+    "title": "Sedona Golf Resort Rainbow 25 Print File",
+    "r2Key": "prints/Sedona Golf Resort rainbow 25 Print File.jpg",
+    "variants": [
+      {
+        "id": "8x10",
+        "label": "8 x 10 in",
+        "stripePriceId": "price_8x10_xxx",
+        "priceCents": 3000
+      },
+      {
+        "id": "16x20",
+        "label": "16 x 20 in",
+        "stripePriceId": "price_16x20_xxx",
+        "priceCents": 9000
+      }
     ]
   }
 ]
