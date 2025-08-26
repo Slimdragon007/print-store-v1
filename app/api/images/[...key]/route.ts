@@ -18,8 +18,9 @@ function guessType(k: string) {
   return "application/octet-stream";
 }
 
-export async function GET(_req: NextRequest, { params }: { params: { key?: string[] } }) {
+export async function GET(_req: NextRequest, context: { params: Promise<{ key?: string[] }> }) {
   try {
+    const params = await context.params;
     const keyRaw = params.key?.join("/") || "";
     const key = keyRaw.replace(/^\/+/, "");
     console.log("[R2 fetch]", { bucket: BUCKET, endpoint: process.env.R2_ENDPOINT, key });
