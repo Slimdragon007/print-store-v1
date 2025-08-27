@@ -376,10 +376,10 @@ export default function AnalyticsDashboard() {
             <Card className="p-4">
               <h3 className="text-lg font-semibold mb-4">Test Events</h3>
               <div className="space-y-2">
-                <Button onClick={testPurchaseEvent} size="sm" className="w-full">
+                <Button onClick={testPurchaseEvent} className="w-full text-sm py-1 px-3">
                   Test Purchase Event
                 </Button>
-                <Button onClick={testAddToCartEvent} size="sm" variant="outline" className="w-full">
+                <Button onClick={testAddToCartEvent} className="w-full text-sm py-1 px-3 bg-white text-gray-800 border border-gray-300 hover:bg-gray-50">
                   Test Add to Cart Event
                 </Button>
               </div>

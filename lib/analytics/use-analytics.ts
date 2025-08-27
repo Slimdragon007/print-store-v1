@@ -526,7 +526,7 @@ export function useAnalytics(config: UseAnalyticsConfig = {}) {
         dns_time: Math.round(navigation.domainLookupEnd - navigation.domainLookupStart),
         tcp_time: Math.round(navigation.connectEnd - navigation.connectStart),
         server_response_time: Math.round(navigation.responseStart - navigation.requestStart),
-        dom_processing_time: Math.round(navigation.domComplete - navigation.domLoading)
+        dom_processing_time: Math.round(navigation.domComplete - navigation.responseStart)
       };
 
       sendEvent('page_performance', metrics);

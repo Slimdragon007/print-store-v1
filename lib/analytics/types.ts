@@ -3,10 +3,19 @@
  * Comprehensive type definitions for GA4 e-commerce tracking
  */
 
+// Define gtag function type
+type GtagFunction = {
+  (command: 'js', date: Date): void;
+  (command: 'config', targetId: string, config?: any): void;
+  (command: 'event', eventName: string, parameters?: any): void;
+  (command: 'set', config: any): void;
+  (command: 'consent', type: 'default' | 'update', config: any): void;
+};
+
 // GA4 Global Interface Declaration
 declare global {
   interface Window {
-    gtag: Gtag.Gtag;
+    gtag: GtagFunction;
     dataLayer: any[];
     ga?: (...args: any[]) => void;
   }

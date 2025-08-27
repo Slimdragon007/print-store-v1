@@ -20,13 +20,18 @@ function DropdownMenu({ children, open, onOpenChange }: DropdownMenuProps) {
   
   return (
     <div className="relative inline-block text-left">
-      {React.Children.map(children, (child) =>
-        React.isValidElement(child) && child.type === DropdownMenuTrigger
-          ? React.cloneElement(child as React.ReactElement<any>, { onClick: handleToggle })
-          : React.isValidElement(child) && child.type === DropdownMenuContent
-          ? menuOpen ? child : null
-          : child
-      )}
+      {React.Children.map(children, (child) => {
+        if (React.isValidElement(child)) {
+          if (child.type === DropdownMenuTrigger) {
+            return React.cloneElement(child as React.ReactElement<DropdownMenuTriggerProps>, { 
+              onClick: handleToggle 
+            });
+          } else if (child.type === DropdownMenuContent) {
+            return menuOpen ? child : null;
+          }
+        }
+        return child;
+      })}
     </div>
   );
 }

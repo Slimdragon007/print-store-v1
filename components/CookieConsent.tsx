@@ -287,26 +287,21 @@ export default function CookieConsent({
                 <div className="flex flex-wrap gap-3 justify-end">
                   <Button
                     onClick={() => setShowDetails(true)}
-                    variant="outline"
-                    size="sm"
-                    className="text-xs"
+                    className="text-xs bg-white text-gray-800 border border-gray-300 hover:bg-gray-50 px-3 py-1"
                   >
                     Customize
                   </Button>
                   
                   <Button
                     onClick={handleRejectAll}
-                    variant="outline"
-                    size="sm"
-                    className="text-xs"
+                    className="text-xs bg-white text-gray-800 border border-gray-300 hover:bg-gray-50 px-3 py-1"
                   >
                     Reject All
                   </Button>
                   
                   <Button
                     onClick={handleAcceptAll}
-                    size="sm"
-                    className="text-xs"
+                    className="text-xs px-3 py-1"
                   >
                     Accept All
                   </Button>
@@ -319,8 +314,7 @@ export default function CookieConsent({
                   <h2 className="text-lg font-semibold">Cookie Preferences</h2>
                   <Button
                     onClick={() => setShowDetails(false)}
-                    variant="ghost"
-                    size="sm"
+                    className="bg-transparent text-gray-600 hover:bg-gray-100 border-0 px-3 py-1"
                     aria-label="Close detailed preferences"
                   >
                     ✕
@@ -429,26 +423,21 @@ export default function CookieConsent({
                 <div className="flex flex-wrap gap-3 justify-end">
                   <Button
                     onClick={handleRejectAll}
-                    variant="outline"
-                    size="sm"
-                    className="text-xs"
+                    className="text-xs bg-white text-gray-800 border border-gray-300 hover:bg-gray-50 px-3 py-1"
                   >
                     Reject All
                   </Button>
                   
                   <Button
                     onClick={handleAcceptAll}
-                    variant="outline"
-                    size="sm"
-                    className="text-xs"
+                    className="text-xs bg-white text-gray-800 border border-gray-300 hover:bg-gray-50 px-3 py-1"
                   >
                     Accept All
                   </Button>
                   
                   <Button
                     onClick={handleSavePreferences}
-                    size="sm"
-                    className="text-xs"
+                    className="text-xs px-3 py-1"
                   >
                     Save Preferences
                   </Button>

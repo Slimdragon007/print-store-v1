@@ -4,16 +4,15 @@ const nextConfig: NextConfig = {
   // Experimental features
   experimental: {
     ppr: true,
-    clientSegmentCache: true,
-    nodeMiddleware: true,
-    optimizeCss: true,
-    webpackBuildWorker: true,
-    turbo: {
-      rules: {
-        '*.svg': {
-          loaders: ['@svgr/webpack'],
-          as: '*.js'
-        }
+    optimizeCss: true
+  },
+  
+  // Turbopack configuration (now stable)
+  turbopack: {
+    rules: {
+      '*.svg': {
+        loaders: ['@svgr/webpack'],
+        as: '*.js'
       }
     }
   },

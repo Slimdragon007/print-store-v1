@@ -31,16 +31,18 @@ function RadioGroup({
   
   return (
     <div className={`grid gap-2 ${className}`} role="radiogroup">
-      {React.Children.map(children, (child) =>
-        React.isValidElement(child)
-          ? React.cloneElement(child as React.ReactElement<any>, {
-              checked: child.props.value === currentValue,
-              onChange: () => handleChange(child.props.value),
-              name,
-              disabled: disabled || child.props.disabled,
-            })
-          : child
-      )}
+      {React.Children.map(children, (child) => {
+        if (React.isValidElement(child)) {
+          const childElement = child as React.ReactElement<RadioGroupItemProps>;
+          return React.cloneElement(childElement, {
+            checked: childElement.props.value === currentValue,
+            onChange: () => handleChange(childElement.props.value),
+            name,
+            disabled: disabled || childElement.props.disabled,
+          });
+        }
+        return child;
+      })}
     </div>
   );
 }
